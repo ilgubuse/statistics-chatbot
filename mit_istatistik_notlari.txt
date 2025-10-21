@@ -1,0 +1,106 @@
+MIT İSTATİSTİK DERS NOTLARI - HİPOTEZ TESTLERİ
+
+T-TEST:
+İki grup ortalaması arasındaki farkı test eder. İki türü vardır:
+- Bağımsız örneklem t-testi: İlişkisiz iki grubu karşılaştırır
+- Bağımlı örneklem t-testi: Aynı grubun farklı zamanlardaki ölçümlerini karşılaştırır
+Varsayımları: Normallik, bağımsızlık, varyans homojenliği
+
+ANOVA (Analysis of Variance):
+İkiden fazla grup ortalamasını karşılaştırır. Türleri:
+- Tek yönlü ANOVA: Bir faktörün etkisini test eder
+- Çift yönlü ANOVA: İki faktörün etkisini test eder
+Varsayımları: Normallik, bağımsızlık, varyans homojenliği
+
+P DEĞERİ:
+Null hipotezin doğru olduğu varsayımıyla, gözlemlenen veya daha ekstrem sonuç elde etme olasılığıdır.
+p < 0.05 istatistiksel olarak anlamlı kabul edilir.
+
+HİPOTEZ TESTİ ADIMLARI:
+1. Null ve alternatif hipotezleri belirle
+2. Anlamlılık düzeyini seç (α = 0.05)
+3. Test istatistiğini hesapla
+4. P değerini bul
+5. Sonuçları yorumla
+
+HATA TÜRLERİ:
+- Tip 1 Hata (α): Gerçekte doğru olan null hipotezin reddedilmesi
+- Tip 2 Hata (β): Gerçekte yanlış olan null hipotezin kabul edilmesi
+- Güç (1-β): Gerçek bir etkiyi tespit etme olasılığı
+
+ÖRNEK UYGULAMALAR:
+- İki farklı öğretim yönteminin başarı farkı: Bağımsız t-test
+- Aynı grubun ön test-son test farkı: Bağımlı t-test
+- Üç farklı ilacın etkinlik karşılaştırması: ANOVA
+- Varyans homojenliği testi: Levene testi
+- Normal dağılım testi: Shapiro-Wilk testi
+
+MIT ÖZEL İÇERİK:
+MIT istatistik derslerinde hipotez testleri hem teorik hem de pratik olarak işlenmektedir.
+Öğrenciler için laboratuvar uygulamaları ve gerçek veri setleri üzerinden örnekler bulunmaktadır.
+
+İSTATİSTİKSEL KAVRAMLAR:
+- Null Hipotez (H0): Test edilen temel varsayım
+- Alternatif Hipotez (H1): Araştırmacının kanıtlamak istediği iddia
+- Anlamlılık Düzeyi (α): Tip 1 hata olasılığı, genellikle 0.05
+- Güç Analizi: Örneklem büyüklüğü planlaması için kullanılır
+- Test İstatistiği: Hesaplanan değer (t, F, z vb.)
+- Kritik Değer: Red bölgesinin sınırı
+- Red Bölgesi: Null hipotezin reddedildiği değerler kümesi
+
+PARAMETRİK VE PARAMETRİK OLMAYAN TESTLER:
+Parametrik testler verinin belirli bir dağılımı (genellikle normal dağılım) takip ettiği varsayımıyla kullanılır.
+Örnekler: t-test, ANOVA, regresyon analizi
+
+Parametrik olmayan testler veri dağılımı hakkında varsayım yapılmadığında veya veri parametrik test varsayımlarını karşılamadığında kullanılır.
+Örnekler: Mann-Whitney U testi, Kruskal-Wallis testi, Wilcoxon işaretli sıra testi
+
+KARAR AĞACI YAKLAŞIMI:
+Doğru istatistiksel testi seçmek için:
+1. Bağımlı değişkenin türünü belirleyin (sürekli/kategorik)
+2. Grup sayısını belirleyin (iki grup/ikiden fazla grup)
+3. Veri dağılımını değerlendirin (normal/normal değil)
+4. Ölçümlerin bağımlı/bağımsız olup olmadığını belirleyin
+
+TEST ÖRNEKLERİ:
+T-Test Örneği: İki farklı lise sınıfının ortalama test puanlarını karşılaştırma
+Paired T-Test Örneği: Aynı hasta grubunda tedavi öncesi ve sonrası glikoz seviyelerini ölçme
+ANOVA Örneği: Üç farklı sınıftaki öğrencilerin sınav puanlarını analiz etme
+Ki-Kare Testi Örneği: Cinsiyet ve ürün tercihi arasındaki ilişkiyi araştırma
+Spearman Sıra Korelasyonu Örneği: Öğrencilerin matematik ve fen performans sıralamaları arasındaki ilişki
+
+GÜÇ ANALİZİ VE ÖRNEKLEM BÜYÜKLÜĞÜ:
+Güç analizi bir çalışmanın gerçek bir etkiyi tespit etme olasılığını belirler.
+Örneklem büyüklüğü hesaplaması için formül: n = σ²(z₁₋β + z₁₋α)² / Δ²
+Burada Δ gerçek ortalama farkı, σ standart sapma, α Tip 1 hata, β Tip 2 hatadır.
+
+İKİ ÖRNEKLEM TESTLERİ:
+Bağımsız iki örneklem t-testi: İki farklı grubun ortalamalarını karşılaştırır
+Varsayımlar: Normallik, bağımsızlık, varyans homojenliği
+Varyanslar eşit değilse Satterthwaite yaklaşımı kullanılır
+
+BİNOMİAL ORANLARIN İKİ ÖRNEKLEM TESTİ:
+İki binomial oranın karşılaştırılması için z-testi kullanılır
+p̂ = (k₁ + k₂) / (n₁ + n₂) ortak oran tahmini
+Test istatistiği: z = (p̂₁ - p̂₂) / √[p̂(1-p̂)(1/n₁ + 1/n₂)]
+
+LECTURE 12: HYPOTHESIS TESTING ÖZETİ:
+- Hipotez testi paradigmasını anlama
+- Hipotez test prosedürlerinin nasıl oluşturulduğunu anlama
+- Örneklem büyüklüğü hesaplamalarını yapabilme
+- Hipotez testi, güven aralıkları, olabilirlik ve Bayesian yöntemleri arasındaki ilişkiyi anlama
+
+TEK ÖRNEKLEM TESTLERİ:
+- Tek örneklem z-testi (varyans biliniyorsa)
+- Tek örneklem t-testi (varyans bilinmiyorsa)
+- Binomial test (kesin yöntem)
+
+İKİ TARAFLI TESTLER:
+Null hipotezi hem çok büyük pozitif hem de çok büyük negatif değerler için reddeder
+Güven aralıkları her zaman p-değerlerinden daha bilgilendiricidir
+
+ÖNEMLİ NOTLAR:
+- Güç 0.80'den azsa hipotez testi yapılmamalı
+- Null hipotezi reddedememe durumu asla güç rapor edilmeden bildirilmemeli
+- İstatistiksel test bir "bilgi deneyidir" ve ancak önemli alternatif hipotezlere karşı güçlü olduğu kadar kullanışlıdır
+- İstatistiksel anlamlılık bilimsel anlamlılık anlamına gelmez
