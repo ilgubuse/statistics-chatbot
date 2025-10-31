@@ -1,4 +1,5 @@
-# İstatistik ChatBot
+# İstatistik ChatBot![Görüntü 22 10 2025 06 11](https://github.com/user-attachments/assets/a31720eb-22bb-4672-ba0b-9d8e71002175)
+
 
 <div align="center">
 
